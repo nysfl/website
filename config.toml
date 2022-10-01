@@ -1,0 +1,37 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'New York State Forensic League'
+theme = "nysfl"
+disableKinds = ['taxonomy', 'term']
+
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    pre = "home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Ballots"
+    weight = 4
+    url = "/ballots/"
+  [[menu.main]]
+    name = "Member Schools"
+    url="/member-schools/"
+    weight = 5
+  [[menu.main]]
+    name = "By-Laws"
+    url="/by-laws/"
+    weight = 6
+  [[menu.main]]
+    name = "Links"
+    url="/links/"
+    weight = 7
+  [[menu.main]]
+    name = "Contact Us"
+    url="/contact-us/"
+    weight = 8
+  [[menu.main]]
+    name = "Tournament Handbook"
+    weight = 9
+    url="/tournament-handbook/"

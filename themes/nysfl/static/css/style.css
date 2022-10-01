@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    background-color: #1b0182;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    background-color: white;
+    width: 980px;
+    max-width: 100%;
+    margin: 2rem auto;
+    padding: 2rem;
+}
