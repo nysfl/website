@@ -13,38 +13,38 @@ Please click on the region number to see the registered schools.
 
 
 
-## Region 1:	Long Island
+## [Region 1:	Long Island](/Region1.pdf)
 
 Nassau, Suffolk	
 
 Mrs. Lydia Esslinger, Syosset High School
 
-## Region 2:	Brooklyn-Queens
+## [Region 2:	Brooklyn-Queens](/Region2.pdf)
 Kings, Queens
 
 Mr. Charles Frodella, Xaverian High School
 
-## Region 3:	Bronx-Manhattan	
+## [Region 3:	Bronx-Manhattan](/Region3.pdf)
 Bronx, Manhattan, Richmond	
 
 Mr. Eric DiMichele Regis High School
-## Region 4:	Hudson
+## [Region 4:	Hudson](/Region4.pdf)
 
 Dutchess, Orange, Putnam, Rockland, Sullivan, Ulster, Westchester	
 
 Mr. Charles Sloat, Iona Prep
 
-## Region 5:	Rochester-Buffalo	
+## [Region 5:	Rochester-Buffalo](/Region5.pdf)
 
 Allegany, Cattaraugus, Chautauqua, Erie. Genesee, Livingston, Monroe, Niagara, Ontario, Orleans, Steuben, Wayne, Wyoming, Yates	
 
 Ms. Catherine Luhr, Mount Mercy Academy
 
-## Region 6:	North Country
+## [Region 6:	North Country](/Region6.pdf)
 Franklin, Jefferson, Lewis, St. Lawrence, Cayuga, Onandaga, Oswego, Seneca	
 
 Ms. Kim Reilly, Franklin Academy
-## Region 7:	Capital/Mid-State
+## [Region 7:	Capital/Mid-State](/Region7.pdf)
 
  Albany, Broome, Chemung, Chenango, Clinton, Columbia, Cortland, Delaware, Essex, Fulton, Greene, Hamilton, Herkimer, Madison, Montgomery, Oneida, Otsego, Rensselaer, Saratoga, Schuyler, Schenectady, Schoharie, Tioga, Tompkins Warren, Washington, (to the Canadian border along the Northway)	
  

@@ -2,15 +2,24 @@
     box-sizing: border-box;
 }
 
+a:visited {
+    color: blue;
+}
+
 html {
     width: 100%;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 body {
-    background-color: #1b0182;
-    width: 100%;
-    padding: 0;
+    height: 100%;
     margin: 0;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(27, 1, 130, 1) 59%, rgba(27, 1, 130, 1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 main {
@@ -19,4 +28,47 @@ main {
     max-width: 100%;
     margin: 2rem auto;
     padding: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    background-color: #1b0182;
+    border-radius: 5px;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+nav ul li {
+    flex-grow: 1;
+    color: white;
+    margin: 0;
+}
+
+nav a, nav a:visited {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
+#nav-border {
+    display: flex;
+    flex-direction: column;
+    background-color: #686682;
+}
+
+#nav-logo {
+    border-radius: 5px;
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 10rem;
+    font-size: 3em;
+    font-variant: small-caps;
 }

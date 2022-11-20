@@ -29,7 +29,7 @@ disableKinds = ['taxonomy', 'term']
     weight = 7
   [[menu.main]]
     name = "Contact Us"
-    url="/contact-us/"
+    url="/member-schools/"
     weight = 8
   [[menu.main]]
     name = "Tournament Handbook"
