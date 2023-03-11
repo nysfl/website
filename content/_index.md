@@ -13,3 +13,7 @@ rules set out in the NYSFL By-Laws and Tournament Handbook.
 
 If your school is interested in beginning a program of speech and debate activities and would like to join the NYSFL, please click on “Contact Us” and we will be 
 very happy to welcome and assist you.
+
+> ## State Championship
+> [State Qualification Chart](/state-qualification-chart/)
+> [Student Congress](/student-congress/)

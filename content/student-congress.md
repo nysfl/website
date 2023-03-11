@@ -13,6 +13,6 @@ Bills must be sent in Word or PDF format and follow these standards:
 
 The following are templates for bills.  The easiest thing to do is copy the template and type over it.
 
-* Bill Template
-* Resolution Template
-* Constitutional Amendment Template
+* [Bill Template](/bill_template.docx)
+* [Resolution Template](/resultion_template.docx)
+* [Constitutional Amendment Template](/constitutional_amendment_template.docx)
