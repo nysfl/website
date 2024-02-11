@@ -1,0 +1,291 @@
+<p>
+  Here is the chart of the number of participants it takes to qualify speakers
+  to the NYSFL Championship.
+</p>
+<p>
+  At a regular tournament There must be at least 2 schools and 3 speakers in a
+  category in order to have a half qual available.
+</p>
+<label
+  >Number of Speakers:
+  <input
+    type="number"
+    value="0"
+    id="reg_tourn_speakers"
+    name="reg_tourn_speakers"
+/></label>
+<div>Half Quals: <span id="half_quals">0</span></div>
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Speakers</th>
+      <th>Number of Quals.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="" id="half_1">
+      <td>3</td>
+      <td>5</td>
+      <td>1 half qual</td>
+    </tr>
+    <tr class="" id="half_2">
+      <td>6</td>
+      <td>10</td>
+      <td>2 half quals</td>
+    </tr>
+    <tr class="" id="half_3">
+      <td>11</td>
+      <td>15</td>
+      <td>3 half quals</td>
+    </tr>
+    <tr class="" id="half_4">
+      <td>16</td>
+      <td>20</td>
+      <td>4 half quals</td>
+    </tr>
+    <tr class="" id="half_5">
+      <td>21</td>
+      <td>25</td>
+      <td>5 half quals</td>
+    </tr>
+    <tr class="" id="half_6">
+      <td>26</td>
+      <td>30</td>
+      <td>6 half quals</td>
+    </tr>
+    <tr class="" id="half_7">
+      <td>31</td>
+      <td>∞</td>
+      <td>one half qual for every 10 speakers</td>
+    </tr>
+  </tbody>
+</table>
+<p>After 30, the ratio changes to one half qual for every 10 speakers.</p>
+<hr />
+<p>
+  At the NYSFL-sponsored Regional Qualifier, up to 8 full qualifiers are awarded
+  to speakers. The ratio is as follows:
+</p>
+<label
+  >Number of Speakers:
+  <input
+    type="number"
+    value="0"
+    id="regional_speakers"
+    name="regional_speakers"
+/></label>
+<div>Full Quals: <span id="full_quals">0</span></div>
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Speakers</th>
+      <th>Number of Quals.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="" id="full_1">
+      <td>1</td>
+      <td>3</td>
+      <td>1 full qual</td>
+    </tr>
+    <tr class="" id="full_2">
+      <td>4</td>
+      <td>6</td>
+      <td>2 full quals</td>
+    </tr>
+    <tr class="" id="full_3">
+      <td>7</td>
+      <td>10</td>
+      <td>3 full quals</td>
+    </tr>
+    <tr class="" id="full_4">
+      <td>11</td>
+      <td>14</td>
+      <td>4 full quals</td>
+    </tr>
+    <tr class="" id="full_5">
+      <td>15</td>
+      <td>20</td>
+      <td>5 full quals</td>
+    </tr>
+    <tr class="" id="full_6">
+      <td>21</td>
+      <td>25</td>
+      <td>6 full quals</td>
+    </tr>
+    <tr class="" id="full_7">
+      <td>26</td>
+      <td>30</td>
+      <td>7 full quals</td>
+    </tr>
+    <tr class="" id="full_8">
+      <td>31</td>
+      <td>∞</td>
+      <td>one full qual for every 10 speakers</td>
+    </tr>
+  </tbody>
+</table>
+
+<script>
+  (() => {
+    const halfQualsChart = [
+      {
+        start: 3,
+        end: 5,
+        description: "1 half qual",
+        calc: () => 1,
+        id: "half_1",
+      },
+      {
+        start: 6,
+        end: 10,
+        description: "2 half quals",
+        calc: () => 2,
+        id: "half_2",
+      },
+      {
+        start: 11,
+        end: 15,
+        description: "3 half quals",
+        calc: () => 3,
+        id: "half_3",
+      },
+      {
+        start: 16,
+        end: 20,
+        description: "4 half quals",
+        calc: () => 4,
+        id: "half_4",
+      },
+      {
+        start: 21,
+        end: 25,
+        description: "5 half quals",
+        calc: () => 5,
+        id: "half_5",
+      },
+      {
+        start: 26,
+        end: 30,
+        description: "6 half quals",
+        calc: () => 6,
+        id: "half_6",
+      },
+      {
+        start: 31,
+        description: "one half qual for every 10 speakers",
+        calc: (i) => 6 + Math.ceil((i - 30) / 10),
+        id: "half_7",
+      },
+    ];
+
+    const fullQualsChart = [
+      {
+        start: 1,
+        end: 3,
+        description: "1 full qual",
+        calc: () => 1,
+        id: "full_1",
+      },
+      {
+        start: 4,
+        end: 6,
+        description: "2 full quals",
+        calc: () => 2,
+        id: "full_2",
+      },
+      {
+        start: 7,
+        end: 10,
+        description: "3 full quals",
+        calc: () => 3,
+        id: "full_3",
+      },
+      {
+        start: 11,
+        end: 14,
+        description: "4 full quals",
+        calc: () => 4,
+        id: "full_4",
+      },
+      {
+        start: 15,
+        end: 20,
+        description: "5 full quals",
+        calc: () => 5,
+        id: "full_5",
+      },
+      {
+        start: 21,
+        end: 25,
+        description: "6 full quals",
+        calc: () => 6,
+        id: "full_6",
+      },
+      {
+        start: 26,
+        end: 30,
+        description: "7 full quals",
+        calc: () => 7,
+        id: "full_7",
+      },
+      {
+        start: 31,
+        description: "one full qual for every 10 speakers",
+        calc: (i) => 6 + Math.ceil((i - 30) / 10),
+        id: "full_8",
+      },
+    ];
+
+    function doTheThing(outputId, chart) {
+      return (event) => {
+        const number = event.target.value;
+        const item = chart.filter(
+          (item) => number >= item.start && (number <= item.end || !item.end)
+        )[0];
+        if (item) {
+          const rowId = item.id;
+          const quals = item.calc(number);
+          const rows = document.querySelectorAll("tr");
+          for (let i = 0; i < rows.length; i++) {
+            rows[i].classList.remove("selected");
+          }
+          document.getElementById(item.id).classList.add("selected");
+          document.getElementById(outputId).textContent = new String(
+            quals || 0
+          );
+        }
+      };
+    }
+
+    const regularInput = document.getElementById("reg_tourn_speakers");
+    regularInput.addEventListener(
+      "input",
+      doTheThing("half_quals", halfQualsChart)
+    );
+
+    const regionalInput = document.getElementById("regional_speakers");
+    regionalInput.addEventListener(
+      "input",
+      doTheThing("full_quals", fullQualsChart)
+    );
+  })();
+</script>
+
+<style>
+  table {
+    width: 100%;
+  }
+
+  label {
+    display: block;
+  }
+
+  th {
+    text-align: left;
+  }
+
+  .selected {
+    background-color: red;
+  }
+</style>
