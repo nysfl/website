@@ -15,5 +15,5 @@ date: 2022-10-01T11:34:41-04:00
 * [Declamation](/dec.pdf)
 * [Original Oratory](/oo.pdf)
 * [Duo Interpretation](/duo.pdf)
-* [Impromptu](/imprompty.pdf)
+* [Impromptu](/impromptu.pdf)
 
